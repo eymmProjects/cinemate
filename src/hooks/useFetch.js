@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-import React from "react";
-
 export const useFetch = (apiPath, queryTerm = "") => {
   const [data, setData] = useState([]);
   const url = `
