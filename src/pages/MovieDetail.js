@@ -5,8 +5,8 @@ import { useTitle } from "../hooks/useTitle";
 export const MovieDetail = ({ title }) => {
   const params = useParams();
   const [movie, setMovie] = useState({});
-  //esLint-disable-next-Line
-  const pageTitle = useTitle(movie.title);
+
+  useTitle(movie.title);
 
   const image = movie.poster_path
     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
